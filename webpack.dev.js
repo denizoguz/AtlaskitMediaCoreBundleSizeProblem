@@ -6,7 +6,7 @@ const config = {
   devtool: 'none',
   mode: 'development',
   plugins: [
-    new BundleAnalyzerPlugin({analyzerPort: 9876}),
+    // new BundleAnalyzerPlugin({analyzerPort: 9876}),
   ]
 };
 

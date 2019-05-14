@@ -15,22 +15,6 @@ const config = {
         include: [Path.join(__dirname, "/src/")],
         exclude: [/node_modules/, /target/],
         loader: 'babel-loader'
-      },
-      {
-        test: /\.css$/,
-        loader: ['style-loader', 'css-loader']
-      },
-      {
-        test: /\.scss$/,
-        use: ['style-loader', 'css-loader', "sass-loader"]
-      },
-      {
-        test: /\.(svg|woff|woff2|eot|ttf|otf)$/,
-        loader: 'url-loader',
-        options: {
-          name: 'fonts/[name].[ext]',
-          limit: 50
-        }
       }
     ]
   },
