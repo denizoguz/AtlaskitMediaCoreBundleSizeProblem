@@ -13,7 +13,7 @@ const config = {
       {
         test: /\.jsx?$/,
         include: [Path.join(__dirname, "/src/")],
-        // exclude: [/node_modules/, /target/],
+        exclude: [/node_modules/, /target/],
         loader: 'babel-loader'
       },
       {
